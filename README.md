@@ -50,7 +50,8 @@ Converted MRP and DiscountedSellingPrice from paise to Indian Rupees
 
 Verified updated values
 
-📊 Business Problems & Insights<b>
+📊 Business Problems & Insights
+
 Q1: Top 10 Best-Value Products (Based on Discount %)
 
 Dukes Waffy Orange Wafers
