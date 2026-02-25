@@ -1,11 +1,11 @@
 # zepto_analysis
 
-🛒 Zepto Product Data Analysis
-📌 Project Overview
+Zepto Product Data Analysis
+Project Overview
 
 This project analyzes product data collected from Kaggle and imported into a Zepto analysis database. The goal is to explore, clean, and extract business insights from the dataset using SQL.
 
-📂 Data Source
+1. Data Source
 
 Data collected from Kaggle
 
@@ -15,24 +15,24 @@ zepto table created
 
 Data imported from local cloud storage
 
-🔍 Data Exploration
-1️⃣ Initial Inspection
+-- Data Exploration
+1. Initial Inspection
 
 Selected first 10 rows of the table
 
 Total number of rows: 3737
 
-Checked for NULL values → ✅ No null values found
+Checked for NULL values →  No null values found
 
 Checked unique product names
 
-2️⃣ Stock Availability
+ Stock Availability
 
 Out of Stock: 3279
 
 In Stock: 453
 
-3️⃣ Product Frequency
+3. Product Frequency
 
 Counted product name occurrences
 
@@ -40,7 +40,7 @@ Sorted in descending order
 
 Highest frequency observed: 6 products appeared 10 times
 
-🧹 Data Cleaning
+4. Data Cleaning
 
 Found 1 record where MRP or DiscountedSellingPrice was 0
 
@@ -51,7 +51,7 @@ Converted MRP and DiscountedSellingPrice from paise to Indian Rupees
 Verified updated values
 
 📊 Business Problems & Insights
-✅ Q1: Top 10 Best-Value Products (Based on Discount %)
+Q1: Top 10 Best-Value Products (Based on Discount %)
 
 Dukes Waffy Orange Wafers
 
@@ -73,7 +73,7 @@ Dukes Waffy Strawberry Roll
 
 Ceres Foods Nalli Nihari Instant Liquid Masala
 
-✅ Q2: High MRP but Out of Stock Products
+Q2: High MRP but Out of Stock Products
 
 Patanjali Cow's Ghee
 
@@ -83,27 +83,42 @@ Aashirvaad Atta With Multigrains
 
 Everest Kashmiri Lal Chilli Powder
 
-✅ Q3: Estimated Revenue per Category
+Q3: Estimated Revenue per Category
 Category	Estimated Revenue (₹)
+
 Fruits & Vegetables	10,846.00
+
 Meats, Fish & Eggs	20,693.00
+
 Biscuits	25,007.60
+
 Beverages	55,051.00
+
 Dairy, Bread & Batter	55,051.00
+
 Health & Hygiene	64,180.00
+
 Home & Cleaning	122,661.00
+
 Ice Cream & Desserts	224,385.00
+
 Chocolates & Candies	224,385.00
+
 Packaged Food	224,385.00
+
 Personal Care	270,849.00
+
 Paan Corner	270,849.00
+
 Munchies	337,369.00
+
 Cooking Essentials	337,369.00
-✅ Q4: Products with MRP > ₹500 and Discount < 10%
+
+Q4: Products with MRP > ₹500 and Discount < 10%
 
 Approximately 39 products identified
 
-✅ Q5: Top 5 Categories with Highest Average Discount %
+Q5: Top 5 Categories with Highest Average Discount %
 
 Fruits & Vegetables
 
@@ -115,7 +130,7 @@ Chocolates & Candies
 
 Packaged Food
 
-✅ Q6: Price per Gram Analysis
+Q6: Price per Gram Analysis
 
 Calculated price per gram for products above 100g
 
@@ -123,7 +138,7 @@ Sorted by best value
 
 Approximately 1000 product records analyzed
 
-✅ Q7: Product Weight Categorization
+Q7: Product Weight Categorization
 
 Products grouped into:
 
@@ -133,7 +148,7 @@ Medium → weight < 1000g
 
 Bulk → weight ≥ 1000g
 
-✅ Q8: Total Inventory Weight per Category
+Q8: Total Inventory Weight per Category
 Category	Total Weight
 Meats, Fish & Eggs	48,016
 Biscuits	84,431
@@ -157,7 +172,7 @@ Database Management System
 
 Kaggle Dataset
 
-📈 Conclusion
+Conclusion
 
 This analysis provides insights into:
 
@@ -172,13 +187,3 @@ Revenue estimation by category
 Stock availability patterns
 
 The findings can help optimize pricing, restocking strategy, and category-level business decisions.
-
-If you'd like, I can also generate:
-
-📊 SQL queries file
-
-📈 Power BI dashboard README
-
-🐍 Python version of the analysis
-
-📁 Complete portfolio-ready GitHub project structure
